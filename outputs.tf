@@ -53,4 +53,3 @@ output "natgw_ids" {
 output "igw_id" {
   value = aws_internet_gateway.mod.id
 }
-

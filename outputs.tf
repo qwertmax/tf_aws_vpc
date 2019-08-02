@@ -1,5 +1,5 @@
 output "private_subnets" {
-  value = aws_subnet.private.*.id
+  value = [aws_subnet.private.*.id]
 }
 
 output "database_subnets" {
@@ -11,7 +11,7 @@ output "database_subnet_group" {
 }
 
 output "public_subnets" {
-  value = aws_subnet.public.*.id
+  value = [aws_subnet.public.*.id]
 }
 
 output "elasticache_subnets" {
